@@ -59,7 +59,7 @@ img.peace-sign
   
 article ul
 {
- list-style-image: url("/Student-CSSGossip/image/peaceSign.png");
+ list-style-image: url("../image/peaceSign.png");
 }
 #outerwrapper {
   width: 650px;
