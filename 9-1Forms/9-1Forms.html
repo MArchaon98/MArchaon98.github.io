@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<!-- Mason Cumming
+     10/08/2024 -->
+<html lang="en">
+<head>
+    <title>Contact Form</title>
+    <meta name="author" content="Your Name" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="Mason Cumming web developer Boise Idaho" />
+    <meta name="keywords" content="client-side server-side C# HTML CSS JavaScript" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        div {
+            margin: 10px;
+        }
+
+        label {
+            margin-right: 15px;
+            width: 150px;
+            display: inline-block;
+        }
+        textarea
+        {
+            column-span: 100;
+            row-gap: 10;
+        }
+    </style>
+</head>
+<body>
+    <form action="mailto:masoncumming@my.cwi.edu?subject=Personal%20Portfolio%20Mail" enctype="text/plain" method="POST">
+        <!-- Group Fields Together, page 104 -->
+        <fieldset>
+        <legend>How do I contact you?</legend>
+        <label for="Company-Name">Company Name:</label> <!-- Company Select Box, page 97 -->
+        <input type="text" name="Company-Name" id="Company-Name" placeholder="Company Name" />
+            <div>
+
+            </div>
+            <label for="first-name">First Name:</label> <!-- Person to Contact Select Box, page 97 -->
+            <input type="text" name="first_name" id="first-name" placeholder="First Name" />
+            <div>
+
+            </div>
+            <label for="email-address"> Email Address:</label> <!-- Email, textbook file rental.html -->	
+            <input type="email" name="email_address" id="email-address" placeholder="Email Address" input type="email"/><!--Video 9.9 Building and Testing a Valid Form-->	
+            <div>
+
+            </div>
+            <label for="Phone-number"> Phone Number:</label><!-- Phone, textbook file rental.html-->
+            <input type="Phone-number" name="Phone-number" id="Phone-number" placeholder="Phone Number" input type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" /><!--Video 9.9 Building and Testing a Valid Form-->
+            <div>
+
+            </div>
+        </fieldset>
+
+        <!-- Group Fields Together, page 104 -->
+        <fieldset>
+            <legend>What opportunities are available at your company?</legend>
+            <label for="next-movie">Type of position: </label> <!-- Select Box, page 98 -->
+            <select>
+                <name="Type-of-Position" id="Type-of-Position"></name>
+                <option>
+                    <option value="Internship">Internship
+                        <option value="Part-Time">Part-Time
+                            <option value="Full-Time">Full-Time
+                                <option value="Contract">Contract
+                                    <option value="Temporary">Temporary
+                                        <option value="On call">On call
+                    </option>
+            </select>
+            <p>How did you find me?</p> <!-- Radio Buttons, page 99 -->
+            <input type="radio" name= "How-Did-You-Find-Me" id="LinkedIn" value="LinkedIn" /> <label for="LinkedIn">LinkedIn</label>
+            <input type="radio" name= "How-Did-You-Find-Me" id="Job Fair" value="Job Fair" /> <label for="Job Fair">Job Fair </label>
+            <input type="radio" name= "How-Did-You-Find-Me" id="CWI Corporate Partner" value="CWI Corporate Partner" /> <label for="CWI Corporate Partner">CWI Corporate Partner </label>
+            <div>
+                <textarea> How-Should-I-Prepare-For-The-Interview </textarea>  <!-- Text Area, textbook file code-9-1.html -->
+            </div>
+        </fieldset>
+		<input type="submit" id="submit" value="Submit" class="btn">
+     </form>
+</body>
+</html>
