@@ -1,0 +1,64 @@
+
+/*Ryan Smart Mason C.
+October 22 */
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@font-face {
+	font-family: 'Roboto';
+	src: url(..//fonts/roboto-regular-webfont.woff) format('woff');
+	src: url(../fonts/roboto-regular-webfont.woff2) format('woff');
+}
+	 
+#outerwrapper {	
+
+	background: rgba(243,205,170, 0.4);
+	border-radius: 15%;
+	width: 70%; margin: 0 auto 0 auto;
+}
+
+html {
+	background-image: url(../images/jewelry.jpg);
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+main{
+	background: linear-gradient(#FFFFFF, #F0F9E6);
+	padding: 10px;
+	margin: 20px;
+	border-radius: 2em;
+	font-size: 1.25em;
+	font-family: Arial, Helvetica, sans-serif;
+}
+footer {
+	padding: 10px;
+	font-size: 1em;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+img.addrightmargin {
+	margin-right: 10%;
+}
+
+#necklace {
+	float: left;
+	border-radius: 100%;
+}
+h1{
+	font-family: "Pacifico", cursive;
+	font-size: 4em;
+}
+
+h2{
+	font-family: 'Roboto';
+	font-style: italic;
+	font-size: 2em;
+}
+
+nav  ul{
+	list-style: none;
+	font-size: 1.5em;
+	clear: both;
+}
