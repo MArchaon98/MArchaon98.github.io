@@ -1,0 +1,17 @@
+/* css used to target all portfolio web pages */
+/* applies to all web pages to promote consistency       */
+    body {
+        background: rgba(210, 223, 250, 0.404);
+        color: #333333;
+        font-size: 1.25rem;
+    }
+h1{
+    font-family: fantasy;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 20%;
+    margin: 0 auto;
+}
