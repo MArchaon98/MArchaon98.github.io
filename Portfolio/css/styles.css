@@ -1,0 +1,64 @@
+a:link {
+    color: #0000EE;
+    text-decoration: none;
+}
+a:hover {
+    color: #EE0000;
+    text-decoration: underline;
+}
+a:active {
+    color: #FF4500;
+}
+input:focus, textarea:focus, select:focus {
+    background-color: #f0f8ff;
+    border: 2px solid #4682b4;
+    outline: none;
+}
+form {
+    margin: 20px 0;
+}
+input, textarea, select {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+}
+input[type="submit"] {
+    background-color: #4682b4;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #5a9bd5;
+}
+input[type="submit"]:active {
+    background-color: #3b74a8;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+caption {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+thead {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+thead th {
+    padding: 10px;
+    text-align: left;
+}
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+tbody td {
+    padding: 10px;
+}
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
