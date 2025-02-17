@@ -1,0 +1,148 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1c1d22;
+    color: white;
+    font-size: 20px;
+}
+footer{
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+}
+
+nav {
+    background-color: #333;
+    width: 100%;
+    display: block;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: left;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+img.logo {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+main {
+    text-align: center;
+}
+#main-image {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.nav-btn.left {
+    left: 10px;
+}
+
+.nav-btn.right {
+    right: 10px;
+}
+
+.nav-btn:hover {
+    background-color: black;
+}
+
+.gallery {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #1c1d22;
+    overflow: hidden;
+    margin: 0 auto;
+    height: 700px;
+    width: 750px;
+}
+
+  label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+button {
+    background: #333;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+button:hover {
+    background: #555;
+}
+
+#responseMessage {
+    text-align: center;
+    color: green;
+    margin-top: 10px;
+}
+
+.contactForm {
+    color: white;
+    background: lightgray;
+    background-color: #F5F5DC;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    width: 350px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+    justify-content: center;
+}
