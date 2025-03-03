@@ -4,12 +4,10 @@ body {
     color: white;
 }
 
-h1 {
+h1, h2 {
     color: white;
 }
-h2 {
-    color: white;
-}
+
 footer {
     font-size: medium;
     font-family: 'Times New Roman', Times, serif;
@@ -98,13 +96,16 @@ img.logo {
     line-height: 1.6;
     color: #e1e1e1;
 }
+
 main {
     text-align: center;
 }
+
 #main-image {
     width: 100%;
-    height: auto;
     max-width: 100%;
+    max-height: 100%;
+    height: auto;
 }
 
 .nav-btn {
@@ -145,7 +146,7 @@ main {
     width: 750px;
 }
 
-  label {
+label {
     font-weight: bold;
     display: block;
     margin-top: 10px;
@@ -160,7 +161,6 @@ input, textarea {
     border-radius: 5px;
     justify-content: center;
     text-align: center;
-    
 }
 
 button {
@@ -191,11 +191,10 @@ button:hover {
     font-weight: bold;
     font-size: 18px;
     margin: 0 auto;
-    box-shadow: 0 4px 8px black;
+    box-shadow: 0 4px 8px white;
 }
 
-.contactForm input, 
-.contactForm textarea {
+.contactForm input, .contactForm textarea {
     width: 100%;
     max-width: 80%;
     padding: 10px;

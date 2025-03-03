@@ -42,19 +42,19 @@ function prevImage(): void {
 }
 
 document.getElementById("contactForm")?.addEventListener("submit", function(event) {
-  event.preventDefault();
+    event.preventDefault();
 
-  let name = (document.getElementById("name") as HTMLInputElement).value;
-  let email = (document.getElementById("email") as HTMLInputElement).value;
-  let subject = (document.getElementById("subject") as HTMLInputElement).value;
-  let message = (document.getElementById("message") as HTMLTextAreaElement).value;
+    let name = (document.getElementById("name") as HTMLInputElement).value;
+    let email = (document.getElementById("email") as HTMLInputElement).value;
+    let subject = (document.getElementById("subject") as HTMLInputElement).value;
+    let message = (document.getElementById("message") as HTMLTextAreaElement).value;
 
-  if (name && email && subject && message) {
-      document.getElementById("responseMessage")!.textContent = "Message sent successfully!";
-      document.getElementById("responseMessage")!.style.color = "green";
-      (this as HTMLFormElement).reset();
-  } else {
-      document.getElementById("responseMessage")!.textContent = "Please fill in all fields.";
-      document.getElementById("responseMessage")!.style.color = "red";
-  }
+    if (name && email && subject && message) {
+        document.getElementById("responseMessage")!.textContent = "Message sent successfully!";
+        document.getElementById("responseMessage")!.style.color = "green";
+        (this as HTMLFormElement).reset();
+    } else {
+        document.getElementById("responseMessage")!.textContent = "Please fill in all fields.";
+        document.getElementById("responseMessage")!.style.color = "red";
+    }
 });
