@@ -177,13 +177,13 @@ button:hover {
 
 #responseMessage {
     text-align: center;
-    color: green;
+    color: blue;
     margin-top: 10px;
 }
 
 .contactForm {
     color: white;
-    background-color: #F5F5DC;
+    background-color: gray;
     padding: 20px;
     border-radius: 20px;
     width: 350px;
@@ -191,16 +191,16 @@ button:hover {
     font-weight: bold;
     font-size: 18px;
     margin: 0 auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px black;
 }
 
 .contactForm input, 
 .contactForm textarea {
     width: 100%;
-    max-width: 500px;
+    max-width: 80%;
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #ccc;
+    border: 1px solid white;
     border-radius: 5px;
     background-color: #333;
     color: white;
