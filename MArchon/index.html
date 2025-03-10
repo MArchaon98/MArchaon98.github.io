@@ -8,58 +8,93 @@
     <meta name="description" content="MArchon Landing Page" />
     <meta name="keywords" content="MArchon games"/>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+          $( "#dialog" ).dialog();
+        } );
+        </script>
 </head>
 <body>
+    <div id="dialog" title="Hello">
+        <p>Thank You For Checking Out My Site!.</p>
+      </div>
     <header>
-<h1><img src="images/Archaon_Icon.png" alt="MArchon Games logo" class="logo">MArchon games</h1>
+        <h1><img id="bannerImage" src="images/Archaon_Icon.png" alt="MArchon Games logo" class="logo">MArchon games</h1>
         <nav>
-                <ul>
-                    <li><a href="Home">Home</a></li>
-                    <li><a href="About Me">About Me</a></li>
-                    <li><a href="Games">Games</a></li>
-                    <li><a href="Projects">Projects</a></li>
-                    <li><a href="Contact Me">Contact Me</a></li>
-                </ul>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About Me">About Me</a></li>
+                <li><a href="#Games">Games</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#contactForm">Contact Me</a></li>
+            </ul>
         </nav>
     </header>
     <main>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a tortor malesuada, euismod arcu a, fringilla urna. Duis accumsan, est eget facilisis vehicula, urna neque pellentesque diam, id dignissim arcu justo a augue. Cras vitae tincidunt justo. Vestibulum sodales rhoncus diam, a hendrerit nibh consectetur quis. Etiam pretium, ligula sit amet mollis ornare, velit eros vehicula nibh, a blandit augue sapien id leo. Vivamus luctus in ex quis ornare. Mauris eget nibh sit amet nunc porttitor rutrum et a lorem. Ut id arcu sagittis, sollicitudin lacus id, varius purus. Integer eget elit elit. Nunc elit urna, ultrices a vestibulum pretium, feugiat eu lacus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam feugiat rhoncus tortor ut tempor. Sed vitae dapibus tellus, in blandit lacus. Donec est lorem, volutpat vel dictum eu, feugiat a felis. Morbi nec sollicitudin nisi.</p>
-        <section id="About Me"></section>
-        <section id="Games"></section>
-        <section id="Projects"></section>
+        <div id="top"></div>
+        <section id="AboutMe">
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="images/Archaon_Icon.png" alt="Placeholder image of Mason">
+                </div>
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu interdum sapien, ut vestibulum eros. Nunc eu tempus ante. Suspendisse potenti. Quisque at diam ac lorem feugiat mollis non id velit. Curabitur non dictum ex. Integer interdum eros eget felis finibus lobortis. Morbi et quam eu nisi ornare mattis. Etiam convallis vestibulum enim, sed volutpat lacus pretium in. Nunc felis lectus, mattis id lacinia in, imperdiet vitae est. Phasellus aliquet feugiat leo. Donec luctus diam sit amet ullamcorper imperdiet. In tincidunt ex a eros vehicula, sed iaculis libero sodales. Etiam dictum orci nec sapien ullamcorper ultricies.
+                        Donec auctor efficitur lorem. Suspendisse tristique ante velit, sed tempus erat efficitur consequat. Suspendisse consectetur at risus euismod faucibus. Suspendisse iaculis varius vulputate. Nullam blandit ante vitae iaculis bibendum. Morbi eget eros at diam tincidunt lacinia. Aliquam erat volutpat. Sed ut commodo eros, a rhoncus arcu. Vestibulum eget ex vehicula, pulvinar eros eget, rhoncus dui. Donec arcu sapien, fermentum ut ligula in, vehicula pharetra lectus. Duis suscipit posuere ante, sit amet suscipit urna maximus vitae. Nam non fringilla nisl.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="Games">
+            <div class="games">
+                <h2>Games</h2>
+                <p>Here you can check out my games!</p>
+                <div class="project-carousel">
+                    <img id="main-image" src="images/Tankhunter.PNG" alt="">
+                    <button class="nav-btn left" onclick="prevImage()">&#10094;</button>
+                    <button class="nav-btn right" onclick="nextImage()">&#10095;</button>
+                </div>
+                <p>Description of the stuff shown above! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc finibus, elit quis gravida fringilla, neque turpis luctus dui, a lacinia est velit vehicula tortor. Sed eu ultrices ex. Morbi mauris turpis, accumsan ac condimentum id, iaculis a ipsum. Ut cursus, mauris eu pretium maximus, urna tellus euismod massa, a gravida lacus ante at mi. Ut sollicitudin, orci non finibus vestibulum, tellus sem sollicitudin nisi, in ullamcorper neque nulla vel turpis. In ultrices risus pulvinar, scelerisque turpis ac, blandit risus. Proin posuere velit at diam commodo viverra. Aenean nec justo laoreet, pharetra lorem eget, mattis elit. Phasellus sodales feugiat magna sed suscipit. Cras vitae consequat sapien. Nulla facilisi. Cras varius turpis sit amet ligula fringilla, ut gravida turpis cursus.</p>
+            </div>
+        </section>
         
+        <h2>Projects</h2>
+        <section id="Projects">
+            <div class="projects">
+                <h2>These are the things I'm working on!</h2>
+                <h1><img src="images/20190322201031_5.jpg"></h1>
+                <p>Description of thing that I'm working on to be made into carousel later. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec odio ipsum, imperdiet eget nunc quis, lacinia faucibus nulla. Cras sit amet mi diam. Donec quis cursus justo. Nam tincidunt hendrerit nunc vitae interdum. In erat ipsum, cursus eu massa sit amet, imperdiet elementum risus. Cras sodales justo sagittis tincidunt molestie. Vestibulum consectetur eleifend erat, ut malesuada ipsum elementum sed. Maecenas nec tellus fermentum, pretium felis in, cursus turpis. Sed molestie quis dolor sed ultricies. Nulla lobortis auctor dignissim. Nulla mattis faucibus interdum. Quisque feugiat mauris vel elit vulputate, non commodo metus faucibus. Nam eu magna ut nulla dictum scelerisque. Fusce sodales aliquam sem, eu malesuada quam rhoncus sed.</p>
+
+            </div>  
+        </section>
+        <section id="ContactMe">
+            <div class="contactForm">
+                <h2>Contact Me</h2>
+                <form id="contactForm">
+                    <label for="name"><p>Name:</p></label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email"><p>Email:</p></label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="subject"><p>Subject:</p></label>
+                    <input type="text" id="subject" name="subject" required>
+                    <label for="message"><p>Message:</p></label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <button type="submit"><p>Send Message</p></button>
+                </form>
+                <p id="responseMessage"></p>
+            </div>
+        </section>        
     </main>
-    <div class="games"> <h2> Projects</h2> <!-- Placeholder for projects -->
-        
-        <div class="gallery">
-            <img id="main-image" src="images/Tankhunter.PNG" alt="">
-            <button class="nav-btn left" onclick="prevImage()">&#10094;</button>
-            <button class="nav-btn right" onclick="nextImage()">&#10095;</button>
-        </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris malesuada sit amet lorem id venenatis. Suspendisse vel nulla nulla. Nulla facilisi. Nunc feugiat suscipit nisl, a mattis risus molestie egestas. Maecenas non dolor vitae ipsum congue dictum. Sed sodales tortor et finibus euismod. Suspendisse et accumsan enim. Nullam ipsum purus, fermentum fringilla sapien eget, pulvinar malesuada sem.</p>
-    </div>
-    <div class="Contact Me">
-        <h2>Contact Me</h2>
-        <form id="contactForm">
-            <label for="name"><p>Name:</p></label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email"><p>Email:</p></label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="subject"><p>Subject:</p></label>
-            <input type="text" id="subject" name="subject" required>
-
-            <label for="message"><p>Message:</p></label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <button type="submit"><p>Send Message</p></button>
-        </form>
-        <p id="responseMessage"></p>
-    </div>
     <footer>
+        
         <p>&copy; 2025 MArchon Games. All Rights Reserved Maybe.</p>
     </footer>
-<script src="js/main.js"></script>
+    <script src="JS/main.js"></script>
 </body>
 </html>
