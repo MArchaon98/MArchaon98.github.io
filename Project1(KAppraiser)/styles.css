@@ -1,0 +1,71 @@
+/* styles.css */
+
+.app-navbar {
+  width: 100%;
+  background-color: gray;
+  box-shadow: 0 4px 8px black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+body {
+  padding-top: 80px;
+}
+
+/* Styling for the section titles */
+.app-section-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+/* General section text styling */
+.app-section-text {
+  font-size: 1.125rem;
+  color: #6c757d;
+}
+
+/* Parallax Background*/
+
+/* .parallax {
+  background-image: url('https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?cs=srgb&dl=pexels-felixmittermeier-956999.jpg&fm=jpg');  Uncomment this and replace URL with your own image
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+} */
+
+/* General Footer Styles */
+.app-footer {
+  background-color: #343a40;
+  color: white;
+}
+
+.testimonial-card {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+}
+
+.testimonial-card p {
+  font-size: 1.125rem;
+  color: #333;
+}
+
+/* Section Styling */
+section {
+  padding: 50px 0;
+}
+
+#testimonials {
+  background-color: #f8f9fa;
+}
+
