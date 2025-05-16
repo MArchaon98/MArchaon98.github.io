@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Mason Cumming" />
+  <meta name="description" content="MArchon Landing Page" />
+  <meta name="keywords" content="MArchon games" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+
+  <script>
+    $(function () {
+      $("#dialog").dialog();
+    });
+  </script>
+</head>
+
+<body>
+  <div id="dialog" title="Hello">
+    <p>Thank You For Checking Out My Site!.</p>
+  </div>
+
+  <header>
+    <h1>
+      <img id="bannerImage" src="img/Archaon_Icon.png" alt="MArchon Games logo" class="logo" />
+      MArchon games
+    </h1>
+    <nav>
+      <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#AboutMe">About Me</a></li>
+        <li><a href="#Games">Games</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#ContactMe">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div id="top"></div>
+
+    <!-- About Me Section -->
+    <section id="AboutMe">
+      <div class="about-container">
+        <div class="about-image">
+          <img src="img/Archaon_Icon.png" alt="Placeholder image of Mason" />
+        </div>
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>Lorem ipsum dolor sit amet...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Games Section with Bootstrap Carousel -->
+    <section id="Games">
+      <div class="games">
+        <h2>Games</h2>
+        <p>Here you can check out my games!</p>
+
+        <div id="gameCarousel" class="carousel slide mx-auto" data-bs-ride="carousel" style="max-width: 1000px;">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/Tankhunter.PNG" class="d-block w-100" alt="Tankhunter" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/warframe2024-snapshot-1.jpg" class="d-block w-100" alt="Snapshot 1" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/warframe2024-snapshot-2.jpg" class="d-block w-100" alt="Snapshot 2" />
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#gameCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#gameCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <p class="mt-3">Description of the stuff shown above! Lorem ipsum dolor sit amet...</p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="Projects">
+      <div class="projects">
+        <h2>These are the things I'm working on!</h2>
+        <h1><img src="img/20190322201031_5.jpg" alt="" /></h1>
+        <p>Description of thing that I'm working on...</p>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="ContactMe">
+      <div class="contactForm">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name:</label>
+            <input type="text" class="form-control mx-auto" id="name" name="name" required style="max-width: 80%;" />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" class="form-control mx-auto" id="email" name="email" required style="max-width: 80%;" />
+          </div>
+          <div class="mb-3">
+            <label for="subject" class="form-label">Subject:</label>
+            <input type="text" class="form-control mx-auto" id="subject" name="subject" required style="max-width: 80%;" />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message:</label>
+            <textarea class="form-control mx-auto" id="message" name="message" rows="4" required style="max-width: 80%;"></textarea>
+          </div>
+          <button type="submit" class="btn btn-dark">Send Message</button>
+        </form>
+        <p id="responseMessage"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 MArchon Games. All Rights Reserved Maybe.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="JS/main.js"></script>
+</body>
+</html>
