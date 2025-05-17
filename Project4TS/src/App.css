@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9fbe7;
+  color: #2e7d32;
+}
+
+section {
+  padding: 60px 20px;
+  border-bottom: 1px solid #c5e1a5;
+  text-align: center;
+}
+
+.hero {
+  background-color: #dff0d8;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero button {
+  padding: 10px 20px;
+  background-color: #388e3c;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.services {
+  background: #f1f8e9;
+}
+
+.services ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services li {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.booking {
+  background: #e8f5e9;
+}
+
+.booking form {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.booking input {
+  margin: 10px;
+  padding: 8px;
+}
+
+.booking button {
+  padding: 8px 16px;
+  background: #43a047;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.testimonials {
+  background-color: #c8e6c9;
+}
+
+.testimonials blockquote {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.testimonials cite {
+  display: block;
+  margin-top: 10px;
+}
+
+.contact {
+  background: #a5d6a7;
+}
