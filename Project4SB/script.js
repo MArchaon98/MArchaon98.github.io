@@ -43,7 +43,6 @@ function prevImage() {
     }
 }
 
-// 🛠️ FIX: Was previously "a.addEventListener(...)"
 var contactForm = document.getElementById("contactForm");
 if (contactForm) {
     contactForm.addEventListener("submit", function (event) {
